@@ -49,6 +49,14 @@
     
 }
 
+.pr{
+    display: block;
+    width: 50%;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+
 
 
 
@@ -101,6 +109,65 @@
     <p align="center">Мороз снежком укутывал:</p>
     <p align="center">-Смотри, не замерзай.</p>
 
+  
+    
+<head> 
+    <meta charset="UTF-8"> 
+    <title>Летающий ангел</title> 
+    <h1 ALIGN="center">Задание 8</h1>
+    <img align="center"src="pr.jpg"class="pr">
+    
+    <style> 
+      .pr{
+        transform: translateX(-490px);
+        
 
-    </BODY>
-    </HTML>
+      }
+        .h1 { 
+            margin-top: 20px; 
+            color: #1900ff;
+        } 
+        .angel, .earth { 
+            position: absolute; 
+        } 
+        @keyframes moveHorizontally { 
+            0% { left: 50; } 
+            50% { left: 40%; } 
+            100% { left: 50; } 
+        } 
+        @keyframes moveVertically { 
+            0% { top: 0; } 
+            50% { top: 500%; } 
+            100% { top: 0; } 
+        } 
+        .angel { 
+            width: 200px; 
+            animation: moveHorizontally 5s linear infinite; 
+        } 
+        .earth { 
+            width: 200px; 
+            animation: moveVertically 5s linear infinite; 
+        } 
+        .content { 
+            position: relative; 
+            top: 50%; 
+            transform: translateY(-1180%); 
+        } 
+    </style> 
+</head> 
+<body> 
+   
+    <div class="content"> 
+        <h1>Летающий ангел<font color="blue"></font></h1> 
+        <p>Используя возможности HTML-языка можно заставить летать ангела по странице.<br>И не только ангела...</p> 
+        <img src="angel.png" alt="Ангел" class="angel"> 
+        <img src="zm.png" alt="Земля" class="earth"> 
+    </div> 
+    <img align="center"scr="pr.jpg">
+</body> 
+</html>
+   
+        
+
+
+    
