@@ -1,25 +1,92 @@
 <!DOCTYPE html>
-    <header>
-      <h1>Мой сайт </h1>
+    <header align="center">
+      <h1>Мой первый сайт </h1>
       <p>Домашняя работа:</p>
       <nav>
-        <ul>
-          <li><a href="sayt.html">1-17</a></li>
-          <li><a href="text.html" color="#FFFFFF">Оформление текстов</a></li>
-          <li><a href="zd3.html">Оформление списков</a></li>
-          <li><a href="zd4.html">Использование графики</a></li>
-          <li><a href="zd5.html">Создание и оформление таблиц</a></li>
+        <ul align="center"class=button>
+          <p><a  href="sayt.html">1-17</a></p>
+          <p></p><a href="text.html" color="#FFFFFF">Оформление текстов</a></p>
+        <p><a href="zd3.html">Оформление списков</a></p>
+          <p><a href="zd4.html">Использование графики</a></p>
+          <p><a href="zd5.html">Создание и оформление таблиц</a></p>
         </ul>
       </nav>
     </header>
-    <main>
-      <article>
-        <section>
-          <h2>Первая секция</h2>
-          <p>Она обо мне</p>
-          <img src="rusik.jpg" alt="фигня какая-то"BORDER="4" ALIGN="BOTTOM" HEIGHT="240" WIDTH="240" VSPACE="8" HSPACE="8">
-          <p color="#FFFFFF"></p> Я буду крутым програмистом!! </p>
-        </section>
-    </main>
+   
   </body>
 </html>
+<html lang="ru">
+<head>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #f0f8ff, #e6e6fa);
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        header {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 90px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+            background: linear-gradient(90deg, #ff007f, #7f00ff);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradient 3s ease infinite;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+
+        p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        .button {
+            background-color: #ffffff; 
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #00ff15; 
+            transform: scale(1.05); 
+        }
+
+        footer {
+            margin-top: auto; 
+            padding: 10px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+
+ 
