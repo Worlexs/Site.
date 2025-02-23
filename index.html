@@ -1,92 +1,28 @@
 <!DOCTYPE html>
-    <header align="center">
-      <h1>Мой первый сайт </h1>
-      <p>Домашняя работа:</p>
-      <nav>
-        <ul align="center"class=button>
-          <p><a  href="sayt.html">1-17</a></p>
-          <p></p><a href="text.html" color="#FFFFFF">Оформление текстов</a></p>
-        <p><a href="zd3.html">Оформление списков</a></p>
-          <p><a href="zd4.html">Использование графики</a></p>
-          <p><a href="zd5.html">Создание и оформление таблиц</a></p>
-        </ul>
-      </nav>
-    </header>
-   
-  </body>
-</html>
 <html lang="ru">
 <head>
-    <style>
-        body {
-            margin: 0;/*Устанавливает отступы (margin) для элемента равными нулю. Это означает, что элемент не будет иметь внешних отступов.*/
-            font-family: 'Montserrat', sans-serif;/*Задает шрифт для текста элемента. В данном случае используется шрифт "Montserrat", а если он недоступен, то будет использован любой другой шрифт без засечек (sans-serif)*/
-            background: linear-gradient(135deg, #f0f8ff, #e6e6fa);/*Устанавливает фоновый цвет с помощью линейного градиента.*/
-            color: #333;/*цвет*/
-            display: flex;/*раставляет по порядку*/
-            flex-direction: column;/*Определяет направление главной оси флекс-контейнера.(в столбик)*/
-            align-items: center;/* Выравнивает дочерние элементы по центру вдоль поперечной оси (горизонтально) в флекс-контейнере.*/
-            justify-content: center;/*Выравнивает дочерние элементы по центру вдоль главной оси (вертикально) в флекс-контейнере.*/
-            height: 100vh;/*Устанавливает высоту элемента равной 100% высоты видимой области браузера (viewport height).*/
-            text-align: center;/*Выравнивает текст внутри элемента по центру.*/
-        }
 
-        header {
-            background-color: rgba(255, 255, 255, 0.8);/**/
-            padding: 20px;/**/
-            border-radius: 90px;/**/
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);/**/
-            margin-bottom: 20px;/**/
-        }
-
-        h1 {
-            font-size: 2.5em;/**/
-            margin: 0;/*Устанавливает отступы (margin) для элемента равными нулю. Это означает, что элемент не будет иметь внешних отступов.*/
-            background: linear-gradient(90deg, #ff007f, #7f00ff);/**/
-            background-clip: text;/**/
-            -webkit-text-fill-color: transparent;/**/
-            animation: gradient 3s ease infinite;/**/
-        }
-
-        @keyframes gradient {
-            0% { background-position: 0% 50%; }/**/
-            100% { background-position: 100% 50%; }/**/
-        }
-
-        p {
-            font-size: 1.2em;/**/
-            margin: 10px 0;/*Устанавливает отступы (margin) для элемента равными нулю. Это означает, что элемент не будет иметь внешних отступов.*/
-        }
-
-        .button {
-            background-color: #ffffff; /**/
-            border: none;/**/
-            color: white;/**/
-            padding: 15px 32px;/**/
-            text-align: center;/**/
-            text-decoration: none;/**/
-            display: inline-block;/**/
-            font-size: 16px;/**/
-            margin: 4px 2px;/*Устанавливает отступы (margin) для элемента равными нулю. Это означает, что элемент не будет иметь внешних отступов.*/
-            cursor: pointer;/**/
-            border-radius: 12px;/**/
-            transition: background-color 0.3s ease, transform 0.3s ease;/**/
-        }
-
-        .button:hover {
-            background-color: #00ff15; /**/
-            transform: scale(1.05); /**/
-        }
-
-        footer {
-            margin-top: auto; /**/
-            padding: 10px;/**/
-            font-size: 0.9em;/**/
-            color: #666;/**/
-        }
-    </style>
+    <title>Мой первый сайт</title>
+    <link rel="stylesheet" href="style.css">
+   
 </head>
 <body>
+    <header>
+        <h1>Мой первый сайт</h1>
+        <p>Домашняя работа:</p>
+        <nav>
+            <ul class="button">
+                <li><a href="sayt.html">1-17</a></li>
+                <li><a href="text.html">Оформление текстов</a></li>
+                <li><a href="zd3.html">Оформление списков</a></li>
+                <li><a href="zd4.html">Использование графики</a></li>
+                <li><a href="zd5.html">Создание и оформление таблиц</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
+
 
 
  
