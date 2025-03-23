@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фреймы в веб-разработке</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('cat.jpg');
+            background-size: cover;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 10px 0;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin: 10px 0;
+        }
+
+        section {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Фреймы</h1>
+</header>
+
+<section>
+    <h2>1. Что такое фреймы?</h2>
+    <p>Фреймы — это HTML-элементы, которые позволяют разделить окно браузера на несколько независимых областей (фреймов), каждая из которых может загружать свой собственный HTML-документ. Это позволяет отображать несколько страниц одновременно.</p>
+</section>
+
+<section>
+    <h2>2. Исторический контекст</h2>
+    <ul>
+        <li>Фреймы появились в HTML 4.0 и использовались для создания сложных макетов.</li>
+        <li>В начале 2000-х годов фреймы были популярны, но со временем их использование снизилось из-за проблем с доступностью, юзабилити и SEO.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>3. Структура фреймов</h2>
+    <p>Фреймы создаются с помощью тега <code>&lt;frameset&gt;</code>, который заменяет тег <code>&lt;body&gt;</code>. Основные атрибуты:</p>
+    <ul>
+        <li><code>cols</code>: определяет количество и ширину колонок.</li>
+        <li><code>rows</code>: определяет количество и высоту строк.</li>
+        <li><code>&lt;frame&gt;</code>: определяет отдельный фрейм и его источник (src).</li>
+    </ul>
+    <p>Пример:</p>
+    <pre><code>&lt;frameset cols="50%,50%"&gt;
+    &lt;frame src="page1.html"&gt;
+    &lt;frame src="page2.html"&gt;
+&lt;/frameset&gt;</code></pre>
+</section>
+
+<section>
+    <h2>4. Проблемы с использованием фреймов</h2>
+    <ul>
+        <li>Навигация: Пользователи могут теряться, так как адресная строка браузера не обновляется при переходе между фреймами.</li>
+        <li>SEO: Поисковые системы могут не индексировать содержимое внутри фреймов должным образом.</li>
+        <li>Доступность: Использование фреймов может затруднить доступность для пользователей с ограниченными возможностями.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>5. Современные альтернативы</h2>
+    <p>С развитием технологий веб-разработки фреймы стали устаревшим подходом. Вместо них используются:</p>
+    <ul>
+        <li>CSS Flexbox и Grid: Для создания адаптивных макетов.</li>
+        <li>JavaScript и AJAX: Для динамической загрузки контента без перезагрузки страницы.</li>
+        <li>Single Page Applications (SPA): Использование библиотек и фреймворков, таких как React, Angular или Vue.js, для создания одностраничных приложений.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>6. Использование &lt;iframe&gt;</h2>
+    <p>&lt;iframe&gt; позволяет встраивать один HTML-документ внутри другого. Это более современный и безопасный способ отображения внешнего контента.</p>
+    <h3>Атрибуты:</h3>
+    <ul>
+        <li><code>src</code>: URL загружаемого документа.</li>
+        <li><code>width</code> и <code>height</code>: размеры iframe.</li>
+        <li><code>sandbox</code>: ограничивает возможности содержимого.</li>
+    </ul>
+    <p>Пример:</p>
+    <pre><code>&lt;iframe src="https://example.com" width="600" height="400" sandbox&gt;&lt;/iframe&gt;</code></pre>
+</section>
+
+<section>
+    <h2>7. Заключение</h2>
+    <p>Фреймы сыграли важную роль в развитии веб-технологий, но их использование в современных веб-приложениях значительно сократилось. Вместо этого разработчики предпочитают более современные и гибкие подходы, которые улучшают пользовательский опыт и обеспечивают лучшую производительность.</p>
+</section>
+
+<footer>
+    &copy; 2025 Руслан Ахмедов (конспект)
+</footer>
+
+
+<a href="index.html" class="back-button" class="res" class="le">Кнопочка назад</a>
+</body>
+</html>
